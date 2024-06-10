@@ -78,7 +78,7 @@ export default class App {
 			this.render.clearEventsList();
 			this.render.updateScoreToTitle({
 				home: 0,
-				huest: 0,
+				guest: 0,
 			})
 		}
 
