@@ -1,7 +1,7 @@
 export default class Connection {
 	constructor(url) {
-		this.urlHtml = `http://${url}`;
-		this.urlSse = `http://${url}/sse`;
+		this.urlHtml = `https://${url}`;
+		this.urlSse = `https://${url}/sse`;
 		this.contentTypeHeader = {
    		'Content-Type': 'application/json;charset=utf-8'
   	}
