@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 18px;
+	list-style-type: none;
+}
+
+body {
+	background-image: url('../img/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.container {
+	min-width: 350px;
+	max-width: 1200px;
+	width: 90%;
+	background-color: rgb(255 255 255 / 0.9);
+	border-radius: 15px;
+	box-shadow: 1px 1px 3px 3px rgb(55 55 55 / 0.5);
+}
+
+.container-main {
+	display: flex;
+	flex-direction: column;
+	margin: 10px auto;
+	padding: 10px;
+	min-height: 500px;
+	height: calc(100vh - 20px);
+}
+
+.score {
+	flex-basis: 50px;
+	display: flex;
+	margin: 0 auto 10px;
+	min-width: 300px;
+	width: 35%;
+	justify-content: center;
+	background: linear-gradient(90deg, rgb(255 255 255 / 0) 0%, rgb(5 225 5 / 0.5) 50%, rgb(255 255 255 / 0) 100%);
+	font-size: 1.2rem;
+	align-items: center;
+}
+
+.error {
+	color: rgb(225 0 0);
+	text-align: center;
+	font-size: 1.1rem;
+}
+
+.team {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.team-name {
+	font-weight: 700;
+ 	white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+  display: inline-block;
+}
+
+.team-score {
+	font-size: 1.3rem;
+	margin: 0 10px;
+	display: inline-block;
+}
+
+.list-events {
+	flex-basis: 100%;
+	overflow: auto;
+}
+
+.event {
+	margin: 20px 0 20px 40px;
+}
+
+.event-time {
+	font-size: 0.9rem;
+}
+
+.event-descr {
+	padding-top: 3px;
+	position: relative;
+}
+
+.event-descr:before {
+	position: absolute;
+	content: '';
+	width: 30px;
+	height: 30px;
+	left: -40px;
+	top: -5px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.event-descr__watch:before {
+	background-image: url('../img/watch.png');
+}
+
+.event-descr__note:before {
+	background-image: url('../img/note.png');
+}
+
+.event-descr__foul:before {
+	background-image: url('../img/foul.png');
+}
+
+.event-descr__reverse:before {
+	background-image: url('../img/reverse.png');
+}
+
+.event-descr__goal:before {
+	background-image: url('../img/goal.png');
+}
+
+.hidden-item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 0;
+	width: 0;
+	content: '';
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+}
