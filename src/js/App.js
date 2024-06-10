@@ -16,7 +16,6 @@ export default class App {
 
 	init() {
 		this.addSseEventListener();
-		this.scrollToEnd();
 	}
 
 	addSseEventListener() {
@@ -71,6 +70,7 @@ export default class App {
 		}
 		this.state.history.loaded = true;
 		this.render.addHistoryEventToList(data);
+		this.scrollToEnd();
 	}
 
 	parsingMessage(message) {
